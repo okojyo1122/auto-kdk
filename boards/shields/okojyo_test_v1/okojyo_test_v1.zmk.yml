@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: okojyo_test_v1
+name: okojyo_test_v1
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - okojyo_test_v1_left
+  - okojyo_test_v1_right

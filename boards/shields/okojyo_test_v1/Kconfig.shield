@@ -1,0 +1,4 @@
+config SHIELD_OKOJYO_TEST_V1_LEFT
+    def_bool $(shields_list_contains,okojyo_test_v1_left)
+config SHIELD_OKOJYO_TEST_V1_RIGHT
+    def_bool $(shields_list_contains,okojyo_test_v1_right)
