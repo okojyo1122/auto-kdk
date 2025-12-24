@@ -91,3 +91,12 @@
     };
 };
 
+&sensor_trigger {
+    trigger-on-move;
+    action = <&layer_on 4>;
+};
+
+&layer_timeout {
+    timeout-ms = <4000>;
+    layers= <4>;
+}
