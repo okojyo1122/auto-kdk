@@ -3,6 +3,20 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+
+    /* --- ここから追加 --- */
+    behaviors {
+        auto_layer: auto_layer {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <MKP_LCLK MKP_RCLK>; // 左クリック・右クリック中はレイヤーを維持
+            timeout-ms = <4000>; // 4秒操作がないと元のレイヤーに戻る
+        };
+    };
+    /* --- ここまで追加 --- */
+
+
+
     keymap {
         compatible = "zmk,keymap";
 
